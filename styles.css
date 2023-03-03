@@ -1,0 +1,99 @@
+.navbar{
+    display: flex;
+    position: sticky;
+    background-color: rgb(61, 58, 58);
+    color: white;
+    height: 4rem;
+    margin: -0.5rem;
+    top: 0px;
+    width: 100;
+    z-index: +1;
+}
+.firstSpan{
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2rem;
+}
+.secondSpan{
+    margin: auto 39%; /*auto 15rem for mobile view*/
+    font-size: 1.5rem;
+}
+.hello{
+    background-color:rgb(23, 23, 23);
+    color: white;
+    /* justify-content: center; */
+    height: 30rem;
+    margin: -1rem -0.5rem;
+    display: flex;
+}
+.hello-content{
+    font-size: 1rem;
+    margin: auto;
+    position: relative;
+    font-size: 2rem;
+}
+img{
+    width: 80%;
+}
+.down-arrow{
+    width: 2rem;
+}
+.projects{
+    margin-top: 7.5rem;
+}
+/* Image Hovering and Text Animation */
+.animation-image {
+    cursor: pointer;
+    max-height: 547px;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    text-align: center;
+}
+
+.animation-image .fadedbox {
+    background-color: #666666;
+    position: absolute;
+    top: 0;
+    left: 7.3rem;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 70%;
+    /* height: 100px; */
+    padding: 227px 59px;
+}
+
+.animation-image:hover .fadedbox {
+    opacity: 0.8;
+}
+
+.animation-image .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.animation-image .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+.animation-image:hover .title,
+.animation-image:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
